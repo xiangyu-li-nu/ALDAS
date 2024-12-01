@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 08/28/24 00:32:42 by Eclipse SUMO GUI Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="SUMOLC/Town04.net.xml"/>
+        <route-files value="SUMOLC/carlavtypes.rou.xml,SUMOLC/sumo.rou.xml"/>
+    </input>
+
+    <output>
+        <write-license value="true"/>
+        <emission-output value="SUMOLC/Vehicleemssiondata.xml"/>
+        <fcd-output value="SUMOLC/fcd.xml"/>
+        <tripinfo-output value="SUMOLC/tripinfos.xml"/>
+    </output>
+
+    <time>
+        <step-length value="0.05"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.25"/>
+        <collision.check-junctions value="true"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="52945"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="SUMOLC/osm.view.xml"/>
+        <tracker-interval value="0.05"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="carla0" depart="8.40" departLane="45.0.00_3" departPos="577.95" departPosLat="-0.69" departSpeed="0.00" departDelay="0.00" arrival="174.05" arrivalLane="45.0.00_3" arrivalPos="836.68" arrivalPosLat="-0.00" arrivalSpeed="0.00" duration="165.65" routeLength="7808.72" waitingTime="17.30" waitingCount="13" stopTime="0.00" timeLoss="38.49" rerouteNo="13" devices="tripinfo_carla0 fcd_carla0" vType="vehicle.lincoln.mkz_2020" speedFactor="0.98" vaporized="traci"/>
+</tripinfos>

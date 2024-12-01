@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 01/06/24 18:21:42 by Eclipse SUMO netedit Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="E:\CARLA0.9.13\WindowsNoEditor\Co-Simulation\Sumo\SUMOLC\Town04.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="E:\CARLA0.9.13\WindowsNoEditor\Co-Simulation\Sumo\SUMOLC\Town04.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="true"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="E:\CARLA0.9.13\WindowsNoEditor\Co-Simulation\Sumo\SUMOLC\sumo.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route edges="40.0.00 39.0.00 38.0.00 37.0.00 36.0.00 35.0.00 42.0.00 49.0.00 48.0.00 47.0.00 46.0.00 45.0.00" color="yellow" id="route_0"/>
+    <route edges="-38.0.00 -39.0.00 -40.0.00 -41.0.00 -46.0.00 -47.0.00 -48.0.00 -49.0.00 -50.0.00 -43.0.00 -36.0.00 -37.0.00" color="yellow" id="route_1"/>
+
+   <route edges = "39.0.00 38.0.00 37.0.00 36.0.00 35.0.00 42.0.00 49.0.00 48.0.00 47.0.00 46.0.00 45.0.00" color="yellow" id="route_3"/>
+   <route edges="-39.0.00 -40.0.00 -41.0.00 -46.0.00 -47.0.00 -48.0.00 -49.0.00 -50.0.00 -43.0.00 -36.0.00 -37.0.00" color="yellow" id="route_4"/>
+
+
+    <flow id="routeFlow_0" type="vehicle.mercedes.coupe" begin="0.00" departLane="random" route="route_0" end="3600.00" number="2000"/>
+    <flow id="routeFlow_1" type="vehicle.mercedes.coupe" begin="0.00" departLane="random" route="route_1" end="3600.00" number="2000"/>
+
+    <flow id="routeFlow_2" type="vehicle.tesla.model3" begin="0.00" departLane="random" route="route_0" end="3600.00" number="500"/>
+    <flow id="routeFlow_3" type="vehicle.tesla.model3" begin="0.00" departLane="random" route="route_1" end="3600.00" number="500"/>
+
+</routes>
